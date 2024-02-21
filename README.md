@@ -1,4 +1,4 @@
-1.About 
+1.About : 
 Tunify is an music Application it is a Fullstack web application in which one can view songs and create playlist we can either register as a Customer or as an Admin. as a customer you have to be a prime customer which you have to purchase through Razerpay and after buying prime subscription you are allowed to view the songs and create playlist. As an admin you can add songs create playlist view playlist.
 ![Screenshot 2024-02-21 231852](https://github.com/Rajkjain03/Tunefy/assets/103574257/01608a65-d162-49e5-8f23-7081e3e5f2a4)
 
