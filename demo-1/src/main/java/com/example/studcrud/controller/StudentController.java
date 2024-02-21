@@ -14,4 +14,7 @@ public class StudentController {
 	public String fetchStudent() {
 		return "Fetching";
 	}
+	
+	
 }
+ 
