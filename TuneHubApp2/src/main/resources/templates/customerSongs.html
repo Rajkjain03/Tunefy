@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Songs</title>
+<link rel="stylesheet" href="" th:href="@{/css/viewSongs.css}">
+<script src="https://kit.fontawesome.com/0faddc1af8.js"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1 class="song_title">Songs list</h1>
+	<table border="1">
+		<tr class="header_title">
+			<td>Name</td>
+			<td>Artist</td>
+			<td>Genere</td>
+			<td>Link</td>
+		</tr>
+		
+		<tr th:each = "songlist : ${songlist}">
+			<td th:text= ${songlist.name}></td>
+			<td th:text= ${songlist.artist}></td>
+			<td th:text= ${songlist.genere}></td>
+			
+			<td >
+				<audio controls>
+    				<source th:src=${songlist.link} type="audio/mpeg">
+  				</audio>
+  			</td>
+		</tr>
+	</table>
+</body>
+</html>

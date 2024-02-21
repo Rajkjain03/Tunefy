@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Playlist</title>
+<link rel="stylesheet" href="" th:href="@{/css/homepage.css}">
+</head>
+<body>
+<h1>Create Playlist</h1>
+	<form action = "/addplaylist" method="post" class="playlistForm">
+		<label>Playlist Name:</label>
+		<input type="text" name="name">
+		<br/>
+		<div th:each="songlist : ${songlist}">
+			<input type="checkbox" th:name="song" th:value="${songlist.id}">
+			<label th:text = "${songlist.name}"></label>
+		</div>
+		<input type="submit" value="ADD PLAYLIST" class="sub">
+	</form>
+</body>
+</html>

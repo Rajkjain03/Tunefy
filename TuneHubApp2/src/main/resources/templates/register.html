@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+
+<title>Registration</title>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/">Tune Hub</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="/map-login">Login</a>
+			</div>
+		</div>
+	</nav>
+
+	<section class="h-100 bg-dark">
+		<div class="container py-5 h-100">
+			<div
+				class="row d-flex justify-content-center align-items-center h-100">
+				<div class="col">
+					<div class="card card-registration my-4">
+						<div class="row g-0">
+							<div class="col-xl-6 d-none d-xl-block">
+								<img
+									src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+									alt="Sample photo" class="img-fluid"
+									style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+							</div>
+							<div class="col-xl-6">
+								<div class="card-body p-md-5 text-black">
+									<h3 class="mb-5 text-uppercase d-flex justify-content-center">Registration form</h3>
+
+									<form action="/register" method=post class="regForm">
+										<div class="row">
+											<div class="col-md-6 mb-4">
+												<div class="form-outline">
+													<input type="text" id="form3Example1m" name="username" required
+														class="form-control form-control-lg" /> <label
+														class="form-label" for="form3Example1m">Name</label>
+												</div>
+											</div>
+											<div class="col-md-6 mb-4">
+												<div class="form-outline">
+													<input type="password" id="form3Example1n" name= "password" required
+														class="form-control form-control-lg" /> <label
+														class="form-label" for="form3Example1n">Password</label>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="form-outline mb-4">
+											<input type="email" id="form3Example97" name="email" required
+												class="form-control form-control-lg" /> <label
+												class="form-label" for="form3Example97">Email ID</label>
+										</div>
+
+										<div
+											class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+											<h6 class="mb-0 me-4">Gender:</h6>
+
+											<div class="form-check form-check-inline mb-0 me-4">
+												<input class="form-check-input" type="radio" 
+													name="gender" value="female" id="femaleGender"  />
+												<label class="form-check-label" for="femaleGender">Female</label>
+											</div>
+
+											<div class="form-check form-check-inline mb-0 me-4">
+												<input class="form-check-input" type="radio" 
+													name="gender" value="male" id="maleGender"  />
+												<label class="form-check-label" for="maleGender">Male</label>
+											</div>
+
+											<div class="form-check form-check-inline mb-0">
+												<input class="form-check-input" type="radio" 
+													name="gender" value="other" id="otherGender" />
+												<label class="form-check-label" for="otherGender">Other</label>
+											</div>
+
+										</div>
+										
+										<div
+											class="d-md-flex justify-content-start align-items-center mb-4 py-2 required">
+
+											<h6 class="mb-0 me-4">Role:</h6>
+
+											<div class="form-check form-check-inline mb-0 me-4">
+												<input class="form-check-input" type="radio" required
+													name="role" value="admin"  id="femaleGender"  />
+												<label class="form-check-label" for="femaleGender">Admin</label>
+											</div>
+
+											<div class="form-check form-check-inline mb-0 me-4">
+												<input class="form-check-input" type="radio" required
+													name="role" value="admin" id="maleGender"  />
+												<label class="form-check-label" for="maleGender">Customer</label>
+											</div>
+											
+										
+
+										</div>
+
+										<div class="form-outline mb-4">
+											
+											<textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
+											<label
+												class="form-label" for="form3Example97">Address</label>
+	
+											</div>
+										
+
+										<div class="d-flex justify-content-center pt-3">
+											<input type="submit" value="REGISTER" class="btn btn-dark btn-lg btn-block"/>
+										</div>
+										
+										
+									</form>
+									<div class="d-flex justify-content-center pt-3 gap-1">Already have an account? <a href="/map-login">Login</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</body>
+</html>

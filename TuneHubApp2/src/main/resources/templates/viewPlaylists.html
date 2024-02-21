@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Playlist</title>
+<link rel="stylesheet" href="" th:href="@{/css/viewSongs.css}">
+<script src="https://kit.fontawesome.com/0faddc1af8.js"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1 class="song_title">Playlist</h1>
+	<table border="1">
+		<tr class="header_title">
+			<td>Playlist Name</td>
+			<td>Playlist Songs</td>
+			<!-- <td>Action</td> -->
+		</tr>
+		<tr th:each="plist : ${plist}">
+			<td th:text=${plist.name}></td>
+			<td>
+				<ul>
+					<li th:each="s: ${plist.song}"><span th:text="${s.name}"></span>
+						<audio controls>
+							<source th:src=${s.link} type="audio/mpeg" />
+						</audio></li>
+				</ul>
+			</td>	
+			<!-- <td>
+  				<a style="color:red;" th:href="@{/deleteplist/{id}(id=${plist.id})}"><i class="fa-solid fa-trash ms-4"></i></a>
+  			</td> -->
+		</tr>
+	</table>
+
+</body>
+</html>

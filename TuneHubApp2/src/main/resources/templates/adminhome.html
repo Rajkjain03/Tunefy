@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Home Page</title>
+<link rel="stylesheet" href="" th:href="@{/css/homepage.css}">
+</head>
+<body>
+	<h1>Admin Home</h1>
+	
+	<div class="welcome"><span>Welcome,</span> <span th:text= ${user.username} > </span></div>
+	<div class="links">
+		
+		<a href="/map-songs">Add Songs</a>
+		<br/>
+		<a href="/map-viewsongs">View Songs</a>
+		<br/>
+		<a href="/map-createplaylist">Create Playlist</a>
+		<br/>
+		<a href="/viewPlaylist">View Playlist</a>
+		<br/>
+		<a href="/logout">Logout</a>
+		
+		
+	</div>
+</body>
+</html>

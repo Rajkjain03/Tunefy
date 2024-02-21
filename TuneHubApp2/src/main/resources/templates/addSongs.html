@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="" th:href="@{/css/viewSongs.css}">
+
+</head>
+<body>
+	<a href="/logout" class="logout">Logout</a>
+	<a href="/map-songs" class="viewSongs">View Songs</a>
+	<h1 class="song_title">Add Songs </h1>
+	
+	<form action="/songs" method="post" class="song_form">
+			
+		<label>Song Name </label>
+		<input type="text" name = "name" required/>
+
+		<label>Song Artist </label>
+		<input type="text" name = "artist" required/>
+
+		<label>Song Genere </label>
+		<input type="text" name = "genere" required/>
+
+		<label>Song Link </label>
+		<input type="text" name = "link" required/>
+
+		<input type="submit" value="ADD SONG" class="submit_btn"/>
+	</form>
+</body>
+</html>
